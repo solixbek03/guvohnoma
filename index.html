@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>guvohnoma</title>
+  <link rel="stylesheet" href="./styles.css/main.css">
+</head>
+<body>
+  <div class="container">
+    <div class="data">
+      <h1 class="data-h1">Malumotlar varaqasi</h1>
+      <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+        <input type="text" class="input-first" name="youser-name" aria-label="sizning ismingiz" placeholder="sizning ismingiz" required>
+
+        <input type="text" class="input-first" name="youser-second-name" aria-label="sizning familiangiz" 
+        placeholder="sizning familiangiz" required>
+        
+        <input type="tel" class="input-first" name="youser-phone" aria-label="sizning raqamingiz" 
+        placeholder="sizning raqamingiz" required minlength="4" maxlength="13">
+
+        <input type="date" class="input-first" name="youser-was-born" aria-label="sizning tugilgan yilingiz" 
+        placeholder="sizning tugilgan yilingiz" required min="1999-01-01" max="2022-12-31">
+
+        <input type="email" class="input-first" name="youser-email" aria-label="emailingizni tozing" placeholder="emailingizni yozing" required>
+
+        <button type="submit">
+          <strong>Send</strong>
+        </button>
+      </form>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+
+        <label class="ss" for="holatingiz">holatingizni tallang</label>
+        <br>
+        <input list="userni-holadi" id="holatingiz" class="input-first">
+        <datalist id="userni-holadi">
+          <option value="uylangan"></option>
+          <option value="uylanmagan"></option>
+          <option value="turmushga chiqqan"></option>
+          <option value="turmushga chiqmagan"></option>
+        </datalist>
+        <br>
+          <fieldset class="border">
+            <legend for="daromad">
+              qancha oylikka olasiz
+            </legend>
+            <br>
+            <input type="radio">ishsiz
+            <br>
+            
+            <input type="radio">400$
+            <br>
+            
+            <input type="radio">900$
+            <br>
+            
+            <input type="radio">1500$
+            <br>
+            
+            <input type="radio">2000$
+            <br>
+            
+            <input type="radio">5000$
+            <br><br>
+          </fieldset>
+
+          <fieldset class="border-2">
+            <legend for="tillari">malumotingiz qanday</legend>
+            <input type="checkbox">orta malumotli
+            <br>
+            <input type="checkbox">oliy molumotli
+            <br>
+            <input type="checkbox">magisteratura
+              <br>
+          </fieldset>
+        <button type="submit">
+          <strong>Send</strong>
+        </button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
